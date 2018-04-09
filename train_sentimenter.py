@@ -27,7 +27,7 @@ def train_sentiment_classify(data_path,learning_rate=0.001, epochs=2, mini_batch
     sample_sentence = '\"this is a simple sentence to test the embedded text\"'
     print("Embeded of:",sample_sentence," is:",data.embed_text(sample_sentence))
 
-    clf = LSTM_Train(learning_rate=learning_rate, epochs=epochs, batch_size=mini_batch_size, lstm_units=lstm_units)
+    clf = LSTM_Train(learning_rate=float(learning_rate), epochs=int(epochs), batch_size=int(mini_batch_size), lstm_units=int(lstm_units))
     clf.train(data, session_path=os.path.join(data_path,'saved_session'), device_name=device_name)
 
 
