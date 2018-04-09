@@ -30,3 +30,13 @@ Train parameters:
 * batch_size: size of the mini_batch
 * lstm_units: number of hidden units in a LSTM cell
 * device_name: train the model using CPU/GPU ('cpu' or 'gpu')
+
+To test the model
+
+```
+python test_sentimenter.py session_path sample_sentence
+```
+
+Test parameters:
+* session_path: absolute path to the trained tensorflow session
+* sample_sentence: sample sentence to test the sentiment classifier
