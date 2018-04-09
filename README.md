@@ -18,3 +18,15 @@ For demonstration, two public datasets were used:
 - Movie review dataset. ([Source](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data))
 
 To train the LSTM model:
+
+```
+python train_sentimenter.py data_path learning_rate epochs batch_size lstm_units device_name
+```
+
+Train parameters:
+* data_path: absolute path to the dataset folder
+* learning_rate: Adam Optimizer learning rate
+* epochs: Number of epochs
+* batch_size: size of the mini_batch
+* lstm_units: number of hidden units in a LSTM cell
+* device_name: train the model using CPU/GPU ('cpu' or 'gpu')
